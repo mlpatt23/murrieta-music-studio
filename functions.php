@@ -114,5 +114,26 @@
 	add_action('init', 'murrietamusicstudio_services');
 	
 	
+	// Add in custom post type in ACF for Tuition Table (Tuition & Scheduling Page)
+	function murrietamusicstudio_services_highlights() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "Services Highlights" ),
+				"singular_name" => __( "Service Highlights" )
+			),
+			"description" => __( "Description", "murrietamusicstudio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "services-highlights" ),
+			"show_ui" => true,
+			"menu_position" => 50
+		);
+		
+		
+		register_post_type( "services-highlights", $args);
+	}
+	
+	add_action('init', 'murrietamusicstudio_services_highlights');
+	
 	
 ?>
