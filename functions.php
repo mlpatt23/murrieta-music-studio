@@ -47,5 +47,72 @@
 	add_action('init', 'murrietamusicstudio_menus');
 	
 	
+	// Add in custom post type in ACF for Interview Questions (About Page)
+	function murrietamusicstudio_interview_questions() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "Interview Questions" ),
+				"singular_name" => __( "Interview Question" )
+			),
+			"description" => __( "Description", "murrietamusicstudio" ),
+			
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "interview-questions"),
+			"show_ui" => true,
+			"menu_postion" => 20
+			
+		);
+		
+		register_post_type( "interview-questions", $args);
+	}
+	
+	add_action('init', 'murrietamusicstudio_interview_questions');
+	
+	
+	// Add in custom post type in ACF for FAQs (Lessons FAQs Page)
+	function murrietamusicstudio_faqs() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "FAQs" ),
+				"singular_name" => __( "FAQ" )
+			),
+			"description" => __( "Description", "murrietamusicstudio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "faqs" ),
+			"show_ui" => true,
+			"menu_position" => 30
+		);
+		
+		
+		register_post_type( "faqs", $args);
+	}
+	
+	add_action('init', 'murrietamusicstudio_faqs');
+	
+	
+	// Add in custom post type in ACF for Services (Lessons & Services Page)
+	function murrietamusicstudio_services() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "Services" ),
+				"singular_name" => __( "Service" )
+			),
+			"description" => __( "Description", "murrietamusicstudio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "services" ),
+			"show_ui" => true,
+			"menu_position" => 40
+		);
+		
+		
+		register_post_type( "services", $args);
+	}
+	
+	add_action('init', 'murrietamusicstudio_services');
+	
+	
 	
 ?>
