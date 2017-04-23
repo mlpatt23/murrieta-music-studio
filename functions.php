@@ -36,7 +36,15 @@
 	add_action('wp_enqueue_scripts', 'murrietamusicstudio_styles');
 	
 	
+	// Add menus 
+	function murrietamusicstudio_menus() {
+		register_nav_menus(array(
+			'mobile-header-menu' => __('Mobile Header Menu', 'murrietamusicstudio'),
+			'header-menu' => __('Header Menu', 'murrietamusicstudio')
+		));
+	}
 	
+	add_action('init', 'murrietamusicstudio_menus');
 	
 	
 	
