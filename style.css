@@ -21,3 +21,878 @@ Text Domain: murrietamusicstudio
 font-family: "Open Sans", sans-serif;
 font-weight: 300 | 400 | 600; */
 
+/********** Global Styles **********/
+body {
+	background-color: #e6dfce;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+
+.top-bar {
+	background-color: #353535;
+	height: 20px;
+	margin: 0;
+	width: 100%;
+}
+
+.wrapper {
+	display: block;
+	margin: 0 auto;
+	width: 96%;
+}
+
+header,
+nav, 
+main,
+.first-time,
+footer {
+	width: 100%;	
+}
+
+h1 {
+	font-size: 1.3125em;
+	font-weight: 600;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.25em;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+		
+h3 {
+	font-size: 1.125em;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+			
+h4 {
+	font-size: 1.125em;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style-type: disc;
+	width: 80%;
+	margin: 0 auto 20px auto;
+}
+
+ul li {
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 26px;
+}
+
+i {
+	margin-left: 5px;
+	position: relative;
+		top: 3px;
+}
+	
+a:link, 
+a:visited, 
+a:focus {
+	color: #3182e6;
+	text-decoration: underline;
+}
+	
+a:hover, 
+a:active {
+	text-decoration: none;
+}
+	
+.btn {
+	display: block;
+	margin: 0 auto;
+	padding: 10px; 
+	border: 1px solid #3182e6;
+	color: #3182e6;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 40%;
+}
+	
+.btn:hover,
+.btn:active {
+	background-color: #3182e6;
+	color: #e6dfce;
+}
+
+/********** Header Styles **********/
+header {
+	margin-top: 10px;
+}
+
+figure {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 245px;
+}
+
+figure img {
+	width: 100%;
+}
+
+
+header h1 {
+	font-size: 1.875em;
+	font-variant: small-caps;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	margin-top: 10px;
+}
+
+/********** Nav Styles **********/
+nav.site-nav {
+	display: none;
+}
+
+nav.mobile-site-nav {
+	margin: 10px 0 25px 0;
+}
+
+nav.mobile-site-nav ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+}
+
+nav.mobile-site-nav ul li {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #353535;
+	border-bottom: 1px solid #e6dfce;
+	text-transform: uppercase;
+}
+
+nav.mobile-site-nav ul li a:link,
+nav.mobile-site-nav ul li a:visited {
+	color: #e6dfce;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+nav.mobile-site-nav ul li a:hover,
+nav.mobile-site-nav ul li a:active {
+	color: #3182e6;
+}
+
+nav.mobile-site-nav > ul > li:last-of-type {
+	border-bottom: none;
+}
+
+nav.mobile-site-nav ul li#menu-item-26 > a i {
+	margin-left: 10px;
+	position: relative;
+	top: 0px;
+}
+
+nav.mobile-site-nav ul li.submenu {
+	background-color: #4d4d4d;
+	display: none;
+}
+
+
+/* For active page styling */
+nav.mobile-site-nav ul li.current-menu-item > a {
+	color: #3182e6;
+}
+
+
+
+
+
+
+/****** Photo Slider Styles ******/
+.photo-slider {
+	display: none;
+}
+
+
+
+
+/********** Main Index Styles **********/
+.heading {
+	border-bottom: 1px solid #353535;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+#mercedes-img {
+	margin: 0 auto 20px auto;
+}
+
+#mercedes-img img,
+#clefs-img img {
+	height: auto;
+}
+
+#clefs-img {
+	display: none;
+}
+
+
+
+
+/****** Main Styles (About, Lessons-Services, FAQs, Contact) ******/
+.col {
+	display: block;
+	width: 100%;
+}
+
+.question,
+.service {
+	margin-bottom: 35px;
+}
+
+.question .non-mobile-h3,
+.service .non-mobile-h2 {
+	display: none;
+}
+
+.question h3 a:link,
+.question h3 a:visited,
+.question h3 a:focus,
+.question h3 a:hover,
+.question h3 a:active {
+	color: #353535;
+	text-decoration: none;
+}
+
+.question .mobile-h3 a i,
+.service .mobile-h2 a i {
+	position: relative;
+	top: 0px;
+}
+
+.service h2 a:link,
+.service h2 a:visited,
+.service h2 a:focus,
+.service h2 a:hover,
+.service h2 a:active {
+	color: #353535;
+	text-decoration: none;
+}
+
+.answer,
+.service-description {
+	display: none;
+}
+
+
+.contact-form p {
+	margin: 5px;
+}
+
+#nf-form-1-cont {
+	margin-top: 30px;
+	width: 98%;
+}
+
+.contact-form .nf-form-title,
+.contact-form .nf-form-fields-required,
+.contact-form .nf-input-limit {
+	display: none;
+}
+
+
+.contact-form .nf-field-element {
+	width: 100px;
+}
+
+
+.contact-form .nf-field-label label,
+.contact-form .nf-field-element input,
+.contact-form .nf-field-element textarea {
+	display: block;
+	width: 100%;
+}
+
+.contact-form .nf-field-label label {
+	font-size: 1.125em;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+
+.contact-form .ninja-forms-req-symbol {
+	color: #3182e6;
+}
+
+.contact-form .nf-field-element input,
+.contact-form .nf-field-element textarea {
+	background-color: #ffffff;
+	border: 1px solid #575757;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-size: 1.125em;
+}
+
+.contact-form .nf-field-element textarea {
+	resize: none;
+}
+
+/* Submit button */	
+.contact-form input#nf-field-4 {
+	background-color: #e6dfce;
+	font-size: 1.125em;
+	display: block;
+	margin: 0 auto;
+	padding: 10px; 
+	border: 1px solid #3182e6;
+	color: #3182e6;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 40%;
+}
+
+.contact-form input#nf-field-4:hover,
+.contact-form input#nf-field-4:active {
+	background-color: #3182e6;
+	color: #e6dfce;
+}
+
+.studio-location h4 {
+	margin-bottom: 5px;
+}
+
+.studio-location p {
+	margin-bottom: 0;
+}
+
+.map-container {
+	width: 70%;
+	margin: 10px auto 25px auto;
+}
+
+.map-container iframe {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/********** Main Styles (Tuition-Scheduling, Calendar) **********/
+.schedule,
+.more-info {
+	text-align: center;
+}
+
+.mobile-table {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.mobile-table h2 {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.table-service {
+	margin-bottom: 40px;
+}
+
+.table-service table {
+	margin: 15px 0 15px 0;
+}
+
+.table-service td {
+	font-size: 1em;
+	font-weight: 300;
+	padding: 10px 20px 10px 0;
+}
+
+.non-mobile-table {
+	display: none;
+}
+
+
+	
+
+
+
+
+
+
+
+
+
+/********** First Time Styles **********/
+.first-time {
+	border-top: 1px solid #353535;
+	padding-top: 35px;
+	margin-top: 40px;
+}
+
+.first-time h2,
+.first-time p,
+.first-time .btn {
+	text-align: center;
+}
+
+.first-time h2 {
+	margin-bottom: 25px;
+}
+
+.first-time p {
+	margin-bottom: 20px;
+}
+
+.first-time .btn {
+	text-decoration: none;
+	margin-bottom: 40px;
+}
+
+/********** Footer Styles **********/
+footer {
+	background-color: #353535;
+	color: #e6dfce;
+	padding: 15px 0;
+	overflow: auto;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+ul.social-media-icons {
+	list-style-type: none;
+	margin: 0;
+}
+
+ul.social-media-icons li {
+	display: inline;
+}
+
+ul.social-media-icons li a:link,
+ul.social-media-icons li a:visited,
+ul.social-media-icons li a:focus {
+	color: #e6dfce;
+}
+
+ul.social-media-icons li a:hover,
+ul.social-media-icons li a:active {
+	color: #3182e6;
+}
+
+
+
+
+
+/********** Tablet Styles **********/
+@media screen and (min-width: 768px) {
+	.wrapper {
+		width: 94%;
+	}
+	
+	h1 {
+		font-size: 1.875em;
+		font-weight: 400;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+		line-height: 1.875em;
+		font-weight: 600;
+	}
+	
+	h3 {
+		font-size: 1.25em;
+		line-height: 1.875em;
+		font-weight: 600;
+	}
+	
+	ul li,
+	p {
+		font-size: 1.125em;
+		line-height: 1.875em;
+	}
+	
+	.btn {
+		font-size: 1.25em;
+	}
+	
+	/********** Header Styles **********/	
+	figure {
+		width: 48%;
+		max-width: 350px;
+	}
+	
+	.decoration {
+		width: 65%;
+		margin: 10px auto;
+		border-bottom: 1px solid #353535;
+		padding-bottom: 10px;
+	}
+	
+	header h1 {
+		font-size: 2.5em;
+
+	}
+	
+	/********** Nav Styles **********/
+	nav.mobile-site-nav {
+		display: none;
+	}
+	
+	nav.site-nav {
+		display: block;
+	}
+	
+	nav.site-nav ul {
+		list-style-type: none;
+	}
+	
+	nav.site-nav ul#menu-header-menu {
+		display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		justify-content: space-between;
+		margin-top: 25px;
+	}
+	
+	nav.site-nav li {
+		text-transform: uppercase;
+	}
+	
+	nav.site-nav ul#menu-header-menu > li {
+		font-size: 1.125em;
+		position: relative;
+	}
+	
+	nav.site-nav ul#menu-header-menu > li > a {
+		padding-bottom: 10px;
+	}
+	
+	nav.site-nav ul#menu-header-menu > li > a:link,
+	nav.site-nav ul#menu-header-menu > li > a:visited,
+	nav.site-nav ul#menu-header-menu > li > a:focus {
+		color: #353535;
+		text-decoration: none;
+	}
+	
+	nav.site-nav ul#menu-header-menu > li > a:hover,
+	nav.site-nav ul#menu-header-menu > li > a:active {
+		color: #3182e6;
+	}
+	
+		
+	nav.site-nav ul#menu-header-menu li#menu-item-34 > a i {
+		margin-left: 10px;
+		position: relative;
+		top: -1px;
+	}
+	
+	
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu {
+		display: none;
+		position: absolute;
+		left: -70px;
+		width: 250px;
+		z-index: 2;
+	}
+	
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li {
+		background-color: #353535;
+		text-align: center;
+		border-bottom: 1px solid #e6dfce;
+		padding: 5px 0;
+	}
+	
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li:last-of-type {
+		border-bottom: none;
+	}
+	
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li a:link,
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li a:visited,
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li a:focus {
+		color: #e6dfce;
+		text-decoration: none;
+	}
+	
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li a:hover,
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li a:active {
+		color: #3182e6;
+	}
+	
+	
+	
+	/* For active page menu styling */
+	
+	nav.site-nav ul#menu-header-menu li.current-menu-item {
+		border-bottom: 8px solid #3182e6;
+	}
+	
+	nav.site-nav ul#menu-header-menu li.current-menu-item > a:link,
+	nav.site-nav ul#menu-header-menu li.current-menu-item > a:visited,
+	nav.site-nav ul#menu-header-menu li.current-menu-item > a:focus {
+		color: #3182e6;
+	}
+
+	nav.site-nav ul#menu-header-menu li#menu-item-34 ul.sub-menu li.current-menu-item a {
+		color: #3182e6;
+	} 
+	
+	
+	
+	/********** Photo Slider Styles **********/
+	.photo-slider {
+		display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+	
+	.photo-slider img {
+		width: 80%;
+		height: 80%;
+	}
+	
+	
+	/********** Main Styles **********/	
+	#welcome .heading {
+		margin-bottom: 50px;
+	}
+	
+	#welcome div {
+		margin: 0 auto 10px auto;
+		width: 84%;
+		overflow: auto;
+	}
+	
+	#mercedes-img {
+		width: 23%;
+		max-width: 145px;
+		float: left;
+		margin-right: 9%;
+
+	}
+	
+	#welcome p {
+		display: inline;
+	}
+
+	#clefs-img {
+		display: inline-block;
+		width: 46%;
+		float: right;
+		margin-left: 7%;
+
+	}
+	
+	
+	
+	
+	
+	/****** Main Styles (About, Lessons-Services, FAQs, Contact) ******/
+	.two-col {
+		display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		justify-content: space-between;
+	}
+	
+	.col {
+		display: inline-block;
+		width: 48%;
+	}
+	
+	.service h2 {
+		font-weight: 400;
+	}
+	
+	.question .mobile-h3,
+	.service .mobile-h2 {
+		display: none;
+	}
+	
+	.question .non-mobile-h3,
+	.service .non-mobile-h2 {
+		display: block;
+	}
+	
+	.question h3 a i,
+	.service h2 a i {
+		display: none;
+	}
+	
+	.question .answer,
+	.service .service-description {
+		display: block;
+	}
+	
+	.map-container {
+		width: 100%;
+	}
+	
+	
+	/********** Main Styles (Tuition-Scheduling, Calendar) **********/
+	.mobile-table {
+		display: none;
+	}
+	
+	.non-mobile-table {
+		display: block;
+		width: 90%;
+		max-width: 650px;
+		margin: 35px auto;	
+	}
+	
+	.non-mobile-table tr {
+		border-bottom: 1px solid #353535;
+	}
+	
+	.non-mobile-table th {
+		font-size: 1.5em;
+		line-height: 1.875em;
+		font-weight: 400;
+		text-align: left;
+		padding: 10px 15px;
+	}
+	
+	.non-mobile-table td {
+		padding: 10px 15px;
+		font-size: 1em;
+		font-weight: 300;
+	}
+	
+	.non-mobile-table .table-service {
+		font-size: 1.25em;
+		line-height: 1.875em;
+		font-weight: 400;
+	}
+	
+	.non-mobile-table tr .service-price {
+		font-size: 1.125em;
+		line-height: 1.875em;
+	}
+	
+	.non-mobile-table .prices {
+		text-align: left;
+	}
+	
+	.non-mobile-table .prices p {
+		margin-bottom: 10px;
+	}
+	
+	.non-mobile-table .breakdown {
+		position: relative;
+		top: 35px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/********** Footer Styles **********/
+	footer {
+		overflow: auto;
+	}
+	
+	footer p {
+		display: inline-block;
+	}
+	
+	ul.social-media-icons {	
+		display: inline-block;
+		float: right;
+		width: 90px;
+	}
+	
+	
+	
+	
+	
+}
+
+
+/********** Desktop Styles **********/
+@media screen and (min-width: 940px) {
+	.wrapper {
+		max-width: 1200px;
+	}	
+	
+	
+	/********** Header Styles **********/
+	header figure {
+		width: 44%;
+		max-width: 400px;
+		margin: 15px auto;
+	}
+	
+	/********** Nav Styles **********/
+	nav ul {
+		max-width: 1200px;
+	}
+	
+	
+	/********** Photo Slider Styles **********/
+	.photo-slider img {
+		width: 90%;
+		height: 90%;
+	}
+	
+	
+	
+	/********** Main Styles **********/
+	#welcome div {
+		width: 88%;
+	}
+	
+	#mercedes-img {
+		width: 25%;
+		max-width: 270px;
+		margin: 0 8% 0 7%;
+		height: 350px;
+		
+	}
+	
+	#welcome p {
+		display: inline;
+	}
+	
+	#clefs-img {
+		width: 51%;
+		max-width: 550px;
+		margin-left: 7%;
+		height: 420px;
+		
+	}
+	
+	
+	
+	
+	/****** Main Styles (About, Lessons-Services, FAQs, Contact) ******/
+	.col {
+		width: 46%;
+	}
+
+	
+	
+	
+}
