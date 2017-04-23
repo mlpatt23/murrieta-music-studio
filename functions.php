@@ -135,4 +135,26 @@
 	add_action('init', 'murrietamusicstudio_services_highlights');
 	
 	
+	// Add in custom post type in ACF for Studio Locations (Contact Page)
+	function murrietamusicstudio_studio_locations() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "Studio Locations" ),
+				"singular_name" => __( "Studio Location" )
+			),
+			"description" => __( "Description", "murrietamusicstudio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "studio-locations" ),
+			"show_ui" => true,
+			"menu_position" => 30
+		);
+		
+		
+		register_post_type( "studio-locations", $args);
+	}
+	
+	add_action('init', 'murrietamusicstudio_studio_locations');
+	
+	
 ?>
