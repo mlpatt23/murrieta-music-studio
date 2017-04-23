@@ -55,7 +55,6 @@
 				"singular_name" => __( "Interview Question" )
 			),
 			"description" => __( "Description", "murrietamusicstudio" ),
-			
 			"public" => true,
 			"publicly_queryable" => true,
 			"rewrite" => array( "slug" => "interview-questions"),
