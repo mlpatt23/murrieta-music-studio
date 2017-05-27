@@ -20,6 +20,7 @@
 						</h3>
 						
 						<div class="blog-info">
+							<i class="fa fa-music" aria-hidden="true"></i>
 							<p class="date"><?php the_time('F j, Y'); ?> |</p>
 							<p class="category"><?php the_category(', '); ?></p>
 						</div> <!--blog-info -->

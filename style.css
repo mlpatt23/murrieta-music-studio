@@ -448,6 +448,13 @@ nav.mobile-site-nav ul li.current-menu-item > a {
 	margin: 0 0 30px 10px;
 }
 
+.blog-info i {
+	position: relative;
+		top: -1px;
+	margin-right: 5px;
+	color: #3182e6;
+}
+
 .blog-info p {
 	display: inline;
 }
