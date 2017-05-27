@@ -19,7 +19,7 @@ get_header(); ?>
 			
 			<p class="more-info">Or see what kinds of <a href="<?php echo get_permalink(9); ?>">services</a> I offer?</p>
 			
-			<p class="more-info">Or <a href="<?php echo get_permalink(17); ?>">contact me here</a>.</p>
+			<p class="more-info">Or <a href="<?php echo get_permalink(84); ?>">read up on my blog</a>?</p>
 		
 		</main>
 	</div> <!-- wrapper -->
