@@ -20,7 +20,7 @@
 						</h3>
 						
 						<div class="blog-info">
-							<p class="date"><?php the_time('F j, Y'); ?></p>
+							<p class="date"><?php the_time('F j, Y'); ?> |</p>
 							<p class="category"><?php the_category(', '); ?></p>
 						</div> <!--blog-info -->
 				
@@ -28,6 +28,8 @@
 						
 						<a href="<?php the_permalink(); ?>">Read More</a>
 					</article> <!-- blog-post -->
+					
+					<hr class="blog-hr">
 			
 				<?php endwhile; ?>
 			<?php endif; ?>

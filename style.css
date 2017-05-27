@@ -423,9 +423,43 @@ nav.mobile-site-nav ul li.current-menu-item > a {
 }
 
 
-	
 
 
+
+/********** Main Styles (Blog Archive) **********/
+.blog-post {
+	margin: 50px 0;
+}	
+
+.blog-post h3 a:link,
+.blog-post h3 a:visited,
+.blog-post h3 a:focus {
+	color: #353535;
+	text-decoration: none;
+}
+
+.blog-post h3 a:hover,
+.blog-post h3 a:active {
+	color: #3182e6;
+	text-decoration: none;
+}
+
+.blog-info {
+	margin: 0 0 20px 10px;
+}
+
+.blog-info p {
+	display: inline;
+}
+
+.blog-hr {
+	width: 90%;
+	border: 1px solid #757575;
+}
+
+.blog-hr:last-of-type {
+	display: none;
+}
 
 
 
