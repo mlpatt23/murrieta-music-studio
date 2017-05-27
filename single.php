@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="wrapper">
-		<main>
+		<main class="single-post">
 			<div class="heading">
 				<h1><?php echo get_the_title(84); ?></h1>
 			</div> <!-- heading -->

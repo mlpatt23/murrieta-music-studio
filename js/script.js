@@ -219,5 +219,15 @@ $(document).ready(function() {
 	});
 	
 	
+	// Adds active class to "Blog" in nav on single blog post page
+	if ( $("main").hasClass("single-post") ) {
+		// Mobile Nav Blog gets active class
+		$(".mobile-site-nav #menu-item-86 > a").css("color", "#3182e6");
+		
+		// Site Nav Blog gets active class
+		$(".site-nav #menu-item-87").css("border-bottom", "8px solid #3182e6");
+		$(".site-nav #menu-item-87 > a").css("color", "#3182e6");
+	}
+	
 	
 });
