@@ -20,12 +20,13 @@
 						</h3>
 						
 						<div class="blog-info">
-							<!-- Include Date and Category Info -->
+							<p class="date"><?php the_time('F j, Y'); ?></p>
+							<p class="category"><?php the_category(', '); ?></p>
 						</div> <!--blog-info -->
 				
 						<?php the_excerpt(); ?>
 						
-						<a href="<?php the_permalink(); ?>">Read More...</a>
+						<a href="<?php the_permalink(); ?>">Read More</a>
 					</article> <!-- blog-post -->
 			
 				<?php endwhile; ?>
