@@ -156,5 +156,12 @@
 	
 	add_action('init', 'murrietamusicstudio_studio_locations');
 	
+	// Register Google Map API Key
+	function my_acf_google_map_api( $api ){
+		$api['key'] = 'AIzaSyDxavSAL2sjU6tdmXYTeTT_m0DKoMuyHz0';
+		return $api;
+	}
+	add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+	
 	
 ?>

@@ -40,7 +40,9 @@
 							if ( $locations -> have_posts() ) : while( $locations -> have_posts()) : $locations -> the_post(); 
 					
 								$address_1 = get_field('address_line_1');
-								$address_2 = get_field('address_line_2'); ?>
+								$address_2 = get_field('address_line_2'); 
+								$lat = get_field('latitude');
+								$long = get_field('longitude'); ?>
 					
 							<div class="studio-location">
 								<h4><?php the_title(); ?></h4>
@@ -48,7 +50,22 @@
 								<p><?php echo $address_2; ?></p>
 				
 								<div class="map-container">
-									<?php the_content(); ?>
+									<script>
+									    function initMap() {
+									      var location = {lat: <?php echo $lat; ?>, lng: <?php echo $long; ?>};
+									      var map = new google.maps.Map(document.getElementsByClassName('map-container'), {
+									        zoom: 14,
+									        center: location,
+									        draggable: true,
+									        scrollwheel: false
+									      });
+									      var marker = new google.maps.Marker({
+									        position: location,
+									        map: map,
+									        icon: '<?php bloginfo('template_url');?>/assets/img/marker.png'
+									      });
+									    }
+									 </script>
 								</div> <!-- map-container -->
 							</div> <!-- studio-location -->
 					
@@ -70,4 +87,9 @@
 	
 	<?php endif; ?>
 		
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxavSAL2sjU6tdmXYTeTT_m0DKoMuyHz0&callback=initMap">
+	</script>
+
 <?php get_footer(); ?>
+
